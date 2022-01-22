@@ -1,0 +1,20 @@
+.img-container{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+    }
+}
+.loader-img{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width:100px;
+    }
+}
