@@ -18,7 +18,7 @@ export default function Register() {
         if (isLoggedIn()) {
             navigate('/home')
         }
-    }, [])
+    }, [navigate])
 
     //Register user
     const register = async () => {

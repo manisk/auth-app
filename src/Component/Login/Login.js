@@ -18,7 +18,7 @@ export default function Login() {
         if (isLoggedIn()) {
             navigate('/home');
         }
-    }, [])
+    }, [navigate])
 
 
     const login = async () => {

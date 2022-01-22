@@ -8,12 +8,15 @@ function Userlist() {
     const [userList, setUserList] = useState([]);
     const [loading, showLoading] = useState(false);
 
-    useEffect(async () => {
-        showLoading(true)
-        const responseData = await getUserList();
-        showLoading(false);
-        // console.log(responseData);
-        setUserList(responseData.data);
+    useEffect( () => {
+        async function getData(){
+            showLoading(true)
+            const responseData = await getUserList();
+            showLoading(false);
+            // console.log(responseData);
+            setUserList(responseData.data);
+        }
+        getData();
     }, [])
 
 
